@@ -1,17 +1,75 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinterest Hero Section</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Hero container */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* full screen */
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    /* Background image */
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ensures clipping */
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Content inside hero */
+    .hero-content {
+      text-align: center;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .hero-content a {
+      padding: 12px 24px;
+      background-color: #e60023; /* Pinterest red */
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero-content a:hover {
+      background-color: #ad081b;
+    }
+  </style>
 </head>
-
 <body>
-	ffhgghg
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="hero">
+    <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Background" />
+    <div class="hero-content">
+      <h1>Discover New Ideas</h1>
+      <p>Find inspiration for your next project on Pinterest.</p>
+      <a href="#">Explore Now</a>
+    </div>
+  </div>
 </body>
-
 </html>
